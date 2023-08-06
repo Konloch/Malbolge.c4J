@@ -44,7 +44,7 @@ public class MalbolgeC4J
 		
 		try
 		{
-			int[] mem = new int[59050];
+			int[] mem = new int[59049];
 			int i = 0;
 			
 			Scanner scanner = new Scanner(file);
@@ -56,7 +56,7 @@ public class MalbolgeC4J
 					if (Character.isWhitespace(c))
 						continue;
 					
-					if (i == 59050)
+					if (i == 59049)
 					{
 						System.err.println("input file too long");
 						System.exit(1);
@@ -67,7 +67,7 @@ public class MalbolgeC4J
 			}
 			scanner.close();
 			
-			while (i < 59050)
+			while (i < 59049)
 			{
 				mem[i] = op(mem[i - 1], mem[i - 2]);
 				i++;
@@ -108,7 +108,7 @@ public class MalbolgeC4J
 					try
 					{
 						x = System.in.read();
-						if (x == -1) a = 59049;
+						if (x == -1) a = 59048;
 						else a = x;
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -119,9 +119,9 @@ public class MalbolgeC4J
 			}
 			
 			mem[c] = xlat2.charAt(mem[c] - 33);
-			if (c == 59049) c = 0;
+			if (c == 59048) c = 0;
 			else c++;
-			if (d == 59049) d = 0;
+			if (d == 59048) d = 0;
 			else d++;
 		}
 	}
