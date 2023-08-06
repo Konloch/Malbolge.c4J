@@ -18,11 +18,13 @@ import java.util.Scanner;
  */
 public class MalbolgeC4J
 {
-	private static final String xlat1 = "+b(29e*j1VMEKLyC})8&m#~W>qxdRp0wkrUo[D7,XTcA\"lI" +
-			".v%{gJh4G\\-=O@5`_3i<?Z';FNQuY]szf$!BS/|t:Pn6^Ha";
+	private static final String xlat1 =
+		"+b(29e*j1VMEKLyC})8&m#~W>qxdRp0wkrUo[D7,XTcA\"lI" +
+				".v%{gJh4G\\-=O@5`_3i<?Z';FNQuY]szf$!BS/|t:Pn6^Ha";
 	
-	private static final String xlat2 = "5z]&gqtyfr$(we4{WP)H-Zn,[%\\3dL+Q;>U!pJS72FhOA1C" +
-			"B6v^=I_0/8|jsb9m<.TVac`uY*MK'X~xDl}REokN:#?G\"i@";
+	private static final String xlat2 =
+		"5z]&gqtyfr$(we4{WP)H-Zn,[%\\3dL+Q;>U!pJS72FhOA1C" +
+				"B6v^=I_0/8|jsb9m<.TVac`uY*MK'X~xDl}REokN:#?G\"i@";
 	
 	public static void main(String[] args)
 	{
@@ -100,10 +102,7 @@ public class MalbolgeC4J
 					a = mem[d] = op(a, mem[d]);
 					break;
 				case '<':
-					if (x == 10)
-						System.out.print('\n');
-					else
-						System.out.print((char) a);
+					System.out.print((char) a);
 					break;
 				case '/':
 					try
