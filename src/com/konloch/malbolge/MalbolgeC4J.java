@@ -83,7 +83,7 @@ public class MalbolgeC4J
 	
 	private static void exec(int[] mem)
 	{
-		int a = 0, c = 0, d = 0, x = 0;
+		int a = 0, c = 0, d = 0, x;
 		for (;;)
 		{
 			if (mem[c] < 33 || mem[c] > 126) continue;
@@ -108,8 +108,7 @@ public class MalbolgeC4J
 					try
 					{
 						x = System.in.read();
-						if (x == '\n') a = 10;
-						else if (x == -1) a = 59049;
+						if (x == -1) a = 59049;
 						else a = x;
 					} catch (IOException e) {
 						e.printStackTrace();
