@@ -1,5 +1,7 @@
 # Malbolge.c4J
-Malbolge.c4J is a port of the original '98 `malbolge.c` to Java. [Click here](https://github.com/Konloch/Mabolge.c4J/blob/main/src/com/konloch/malbolge/MalbolgeC4J.java) to view the source.
+Malbolge.c4J is written to be an authentic port of the original '98 `malbolge.c` to Java. [Click here](https://github.com/Konloch/Mabolge.c4J/blob/main/src/com/konloch/malbolge/MalbolgeC4J.java) to view the source. 
+
+The goal was to preserve as much of the original C as possible, doing the minimum required changes to port it over to Java.
 
 ## 💡 Requirements
 + Java Runtime 1.8 **or higher**
