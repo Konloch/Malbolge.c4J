@@ -87,6 +87,7 @@ public class MalbolgeC4J
 		for (;;)
 		{
 			if (mem[c] < 33 || mem[c] > 126) continue;
+			
 			switch (xlat1.charAt((mem[c] - 33 + c) % 94))
 			{
 				case 'j':
@@ -102,7 +103,7 @@ public class MalbolgeC4J
 					a = mem[d] = op(a, mem[d]);
 					break;
 				case '<':
-					System.out.print((char) a);
+					System.out.print((char) (a & 0xFF));
 					break;
 				case '/':
 					try
@@ -119,6 +120,7 @@ public class MalbolgeC4J
 			}
 			
 			mem[c] = xlat2.charAt(mem[c] - 33);
+			
 			if (c == 59048) c = 0;
 			else c++;
 			if (d == 59048) d = 0;
