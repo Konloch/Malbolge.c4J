@@ -20,6 +20,11 @@ Pass any malbolge '98 script as the launch argument.
 ```
 java -jar MalbolgeC4J.jar hello_world.malbolge
 ```
+*hello_world.malbolge*
+```
+('&%:9]!~}|z2Vxwv-,POqponl$Hjig%eB@@>}=<M:9wv6WsU2T|nm-,jcL(I&%$#"
+`CB]V?Tx<uVtT`Rpo3NlF.Jh++FdbCBA@?]!~|4XzyTT43Qsqq(Lnmkj"Fhg${z@>
+```
 
 ## 👨‍💻 Disclaimer
 + This is more of a fun experiment, don't take it too seriously.
